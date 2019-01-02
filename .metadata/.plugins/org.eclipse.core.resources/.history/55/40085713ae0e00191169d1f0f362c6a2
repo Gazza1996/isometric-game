@@ -61,7 +61,7 @@ public class GameView extends JPanel implements ActionListener, KeyListener {
 		timer.start(); // Start the timer
 	}
 
-	private void offsetPositions(int i, int offset) {
+	private void offsetPositions(int i, int j) {
 		// TODO Auto-generated method stub
 		pos.setX( ((DEFAULT_SIZE - TILE_WIDTH) / 2) - (TILE_WIDTH / 2) * i + offset);
 		pos.setY((TILE_HEIGHT * i) / 2 - offset);
@@ -116,11 +116,12 @@ public class GameView extends JPanel implements ActionListener, KeyListener {
 
 
 	public void keyPressed(KeyEvent e) {
+	
 	}
 
 	public void keyReleased(KeyEvent e) {
-	} 
+	} // Ignore
 
 	public void keyTyped(KeyEvent e) {
-	} 
+	} // Ignore
 }

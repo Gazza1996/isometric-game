@@ -116,11 +116,12 @@ public class GameView extends JPanel implements ActionListener, KeyListener {
 
 
 	public void keyPressed(KeyEvent e) {
+	
 	}
 
 	public void keyReleased(KeyEvent e) {
-	} 
+	} // Ignore
 
 	public void keyTyped(KeyEvent e) {
-	} 
+	} // Ignore
 }

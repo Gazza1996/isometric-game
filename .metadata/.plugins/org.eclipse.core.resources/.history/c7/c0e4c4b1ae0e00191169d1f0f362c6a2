@@ -4,6 +4,8 @@ import java.awt.*;
 import javax.swing.*;
 
 public class GameWindow {
+	private static GameWindow window_instance = null;
+
 	private static final int DEFAULT_SIZE = 1280;
 
 	private GameView view;
@@ -38,8 +40,8 @@ public class GameWindow {
 			f.getContentPane().setLayout(new FlowLayout());
 			f.add(view);
 			f.addKeyListener(view);
-			f.setSize(1500, 1500);
-			f.setLocation(50, 50);
+			f.setSize(1000, 1000);
+			f.setLocation(100, 100);
 			f.pack();
 			f.setVisible(true);
 			

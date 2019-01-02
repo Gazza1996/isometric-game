@@ -4,6 +4,8 @@ import java.awt.*;
 import javax.swing.*;
 
 public class GameWindow {
+	
+
 	private static final int DEFAULT_SIZE = 1280;
 
 	private GameView view;
