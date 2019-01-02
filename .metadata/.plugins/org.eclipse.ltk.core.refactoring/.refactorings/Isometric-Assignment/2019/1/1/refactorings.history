@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Position.java&apos; to &apos;Isometric-Assignment/src/ie.gmit.sw.Model&apos;&#x0D;&#x0A;- Original project: &apos;Isometric-Assignment&apos;&#x0D;&#x0A;- Destination element: &apos;Isometric-Assignment/src/ie.gmit.sw.Model&apos;&#x0D;&#x0A;- Original element: &apos;ie.gmit.sw.Position.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;ie.gmit.sw.Model" element1="/src&lt;ie.gmit.sw{Position.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1546444999714" units="1" version="1.0"/>
+</session>

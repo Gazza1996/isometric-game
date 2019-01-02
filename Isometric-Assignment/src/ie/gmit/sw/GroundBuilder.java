@@ -2,8 +2,7 @@ package ie.gmit.sw;
 
 import java.awt.image.BufferedImage;
 
-
-import ie.gmit.sw.Position;
+import ie.gmit.sw.Model.Position;
 
 public class GroundBuilder {
 
@@ -44,6 +43,11 @@ public class GroundBuilder {
 			this.isWalkable = this.type.isWalkable();
 		
 	   return new GroundTile(pos, image, isWalkable, type);
+	}
+
+	public void setPos(javax.swing.text.Position position) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

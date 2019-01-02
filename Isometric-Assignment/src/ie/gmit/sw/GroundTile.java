@@ -3,8 +3,9 @@ package ie.gmit.sw;
 import java.awt.image.BufferedImage;
 
 import ie.gmit.sw.GroundType;
+import ie.gmit.sw.Model.Position;
 
-public class GroundTile {
+public class GroundTile extends Tile{
 	
 	private boolean isWalkable;
 	private GroundType type;
