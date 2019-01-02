@@ -1,0 +1,19 @@
+package ie.gmit.sw;
+
+import javax.swing.text.Position;
+
+public class GroundBuilder {
+
+	public void setPos(Position position) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setType(GroundType grass) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+}

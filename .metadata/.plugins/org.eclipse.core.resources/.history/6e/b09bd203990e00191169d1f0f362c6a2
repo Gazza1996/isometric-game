@@ -1,0 +1,10 @@
+package ie.gmit.sw;
+
+public class GroundBuilder {
+
+	public void setPos(Position position) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
