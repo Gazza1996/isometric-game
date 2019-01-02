@@ -1,27 +1,46 @@
 package ie.gmit.sw;
 
+import java.awt.image.BufferedImage;
+import java.util.EnumSet;
+import java.util.Iterator;
+
+import javax.swing.JOptionPane;
+
+import ie.gmit.sw.GroundType;
+
+import ie.gmit.sw.GameWindow;
+
 public class Runner {
+	
 	public static void main(String[] args) throws Exception {
-		//Can read in necessary information here and process it before going any further...
-		
-		//Never run a GUI in the same thread as the main method... This is asynchronous:
+
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
-			public void run() { //Template method....
-				try {
-					/* 
-					 * ----------------------------------------
-					 *             Control Keys
-					 * ----------------------------------------
-					 * Use the arrow keys to move the player.
-					 * Move Player: 'X'
-					 * Toggle View: 'Z'		
-					 * ----------------------------------------
-					 */
-						new GameWindow(); //Could be done nicer?
+			
+			public void run() {
+				
+                try {
+                	
+                	//Loads the tile images so they only need to be buffered once when the game starts
+                	loadResources();
+                	//Using the Game window as a Singleton
+                	GameWindow.getInstance();
+					
 				} catch (Exception e) {
-					e.printStackTrace(); //Real lazy stuff here...
+					//If the GUI fails to load
+					JOptionPane.showMessageDialog(null, "Failed to start program", "Failure", JOptionPane.ERROR_MESSAGE);
 				}
+				
 			}
 		});
+	}
+	
+	public static void loadResources() {
+		
+    	ImageLoad g = new ImageImpl();
+		Iterator<BufferedImage> itr = g.loadImages("./resources/images/ground");
+		EnumSet.allOf(GroundType.class).forEach(type -> (type).setImg(itr.next()));
+		//Iterator<BufferedImage> itr2 = g.loadImages("./resources/images/objects");
+		//EnumSet.allOf(ItemType.class).forEach(type -> (type).setImg(itr2.next()));
+		
 	}
 }

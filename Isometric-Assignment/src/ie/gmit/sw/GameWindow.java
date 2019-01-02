@@ -4,6 +4,8 @@ import java.awt.*;
 import javax.swing.*;
 
 public class GameWindow {
+	private static GameWindow window_instance = null;
+	
 	private static final int DEFAULT_SIZE = 1280;
 
 	private GameView view;
@@ -38,7 +40,7 @@ public class GameWindow {
 			f.getContentPane().setLayout(new FlowLayout());
 			f.add(view);
 			f.addKeyListener(view);
-			f.setSize(1500, 1500);
+			f.setSize(1000, 1000);
 			f.setLocation(50, 50);
 			f.pack();
 			f.setVisible(true);
@@ -48,5 +50,14 @@ public class GameWindow {
 			JOptionPane.showMessageDialog(null, "User Interface Failed to Start", "Failed to Start", JOptionPane.ERROR_MESSAGE);
 		}
 
+	}
+
+	public static GameWindow getInstance() {
+		// TODO Auto-generated method stub
+		if (window_instance == null) 
+        	window_instance = new GameWindow();
+  
+        return window_instance; 
+		
 	}
 }

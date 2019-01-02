@@ -1,0 +1,5 @@
+package ie.gmit.sw;
+
+public interface ImageLoad {
+	public Iterator<BufferedImage> loadImages(String directory);
+}
