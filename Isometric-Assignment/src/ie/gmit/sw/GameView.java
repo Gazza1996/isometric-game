@@ -11,6 +11,9 @@ import java.io.*;
 import java.util.*;
 
 import ie.gmit.sw.Model.*;
+import ie.gmit.sw.ground.GroundBuilder;
+import ie.gmit.sw.ground.GroundTile;
+import ie.gmit.sw.ground.GroundType;
 import ie.gmit.sw.Tile;
 
 /*
@@ -89,11 +92,6 @@ public class GameView extends JPanel implements ActionListener, KeyListener {
 		return img;
 	}
 
-	/*public void toggleView() {
-		isIsometric = !isIsometric;
-		this.repaint();
-	}*/
-
 	public void actionPerformed(ActionEvent e) { // This is called each time the timer reaches zero
 		this.repaint();
 	}
@@ -114,13 +112,21 @@ public class GameView extends JPanel implements ActionListener, KeyListener {
 		}
 	}
 
-
-	public void keyPressed(KeyEvent e) {
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 
-	public void keyReleased(KeyEvent e) {
-	} 
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
 
-	public void keyTyped(KeyEvent e) {
-	} 
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
 }

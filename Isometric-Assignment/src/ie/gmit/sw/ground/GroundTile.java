@@ -1,8 +1,8 @@
-package ie.gmit.sw;
+package ie.gmit.sw.ground;
 
 import java.awt.image.BufferedImage;
 
-import ie.gmit.sw.GroundType;
+import ie.gmit.sw.Tile;
 import ie.gmit.sw.Model.Position;
 
 public class GroundTile extends Tile{
@@ -14,8 +14,8 @@ public class GroundTile extends Tile{
 		super();
 	}
 	
-	public GroundTile(Position p, BufferedImage i, boolean w, GroundType type) {
-		super(p, i);
+	public GroundTile(Position p, BufferedImage i, boolean w, GroundType type, int x, int y) {
+		super(p, i, x, y);
 		this.isWalkable = w;
 		this.type = type;
 	}

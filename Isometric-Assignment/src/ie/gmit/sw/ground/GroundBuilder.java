@@ -1,4 +1,4 @@
-package ie.gmit.sw;
+package ie.gmit.sw.ground;
 
 import java.awt.image.BufferedImage;
 
@@ -10,6 +10,8 @@ public class GroundBuilder {
 	private BufferedImage image;
 	private boolean isWalkable;
 	private GroundType type;
+	private int x;
+	private int y;
 	
 	public GroundBuilder() {
 		
@@ -42,12 +44,13 @@ public class GroundBuilder {
 		
 			this.isWalkable = this.type.isWalkable();
 		
-	   return new GroundTile(pos, image, isWalkable, type);
+	   return new GroundTile(pos, image, isWalkable, type, x, y);
 	}
-
-	public void setPos(javax.swing.text.Position position) {
-		// TODO Auto-generated method stub
-		
+	
+	public GroundBuilder setIndex(int x, int y) {
+		this.x = x;
+		this.y = y;
+		return this;
 	}
 
 }

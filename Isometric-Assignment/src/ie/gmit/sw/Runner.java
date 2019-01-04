@@ -6,9 +6,8 @@ import java.util.Iterator;
 
 import javax.swing.JOptionPane;
 
-import ie.gmit.sw.GroundType;
-
 import ie.gmit.sw.GameWindow;
+import ie.gmit.sw.ground.GroundType;
 
 public class Runner {
 	
@@ -27,7 +26,7 @@ public class Runner {
 					
 				} catch (Exception e) {
 					//If the GUI fails to load
-					JOptionPane.showMessageDialog(null, "Failed to start program", "Failure", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, null, "Error", JOptionPane.ERROR_MESSAGE);
 				}
 				
 			}

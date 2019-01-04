@@ -14,8 +14,8 @@ public class SpriteTile extends Tile{
 		super();
 	}
 	
-	public SpriteTile(Position p, BufferedImage i, boolean e) {
-		super(p, i);
+	public SpriteTile(Position p, BufferedImage i, boolean e, int x, int y) {
+		super(p, i, x, y);
 		this.engaged = e;
 	}
 	
